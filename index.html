@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas! 🎄</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+      font-family: 'Times New Roman', serif;
+    }
+
+    /* Welcome Screen */
+    #welcome-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .welcome-panel {
+      background: rgba(20, 20, 20, 0.95);
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      border-radius: 15px;
+      padding: 40px;
+      text-align: left;
+      width: 80%;
+      height: 60%;
+      max-width: 1200px;
+      box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-out;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .welcome-message {
+      color: #fceea7;
+      font-size: 24px;
+      line-height: 1.8;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      font-family: 'Great Vibes', cursive;
+      text-shadow: 0 0 20px rgba(252, 238, 167, 0.3);
+      white-space: pre-line;
+      overflow-y: auto;
+      flex: 1;
+      padding-right: 15px;
+    }
+
+    /* Custom scrollbar */
+    .welcome-message::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .welcome-message::-webkit-scrollbar-track {
+      background: rgba(212, 175, 55, 0.1);
+      border-radius: 10px;
+    }
+
+    .welcome-message::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.5);
+      border-radius: 10px;
+    }
+
+    .welcome-message::-webkit-scrollbar-thumb:hover {
+      background: rgba(212, 175, 55, 0.7);
+    }
+
+    .welcome-button {
+      background: linear-gradient(135deg, #d4af37, #f4d03f);
+      border: none;
+      color: #000;
+      padding: 18px 50px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 5px 25px rgba(212, 175, 55, 0.4);
+      font-family: 'Times New Roman', serif;
+    }
+
+    .welcome-button:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 35px rgba(212, 175, 55, 0.6);
+      background: linear-gradient(135deg, #f4d03f, #d4af37);
+    }
+
+    .welcome-button:active {
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    /* Snowflakes animation */
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: #fff;
+      font-size: 1em;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <div class="welcome-panel">
+      <div class="welcome-message" id="welcome-text">
+        Hello em iu nhennnn! 🎄
+
+        Chúc em có một Giáng Sinh thật vui vẻ, hạnh phúc, và đầy niềm vui.
+
+        Lời đầu tiên, anh cảm ơn vì em đã đến bên anh, đã cho anh cảm thấy hạnh phúc và vui vẻ hơn bao giờ hết. Có thể
+        giữa chúng ta có những lần cãi vã về bất đồng quan điểm, về cảm xúc nhưng nhờ đó mà anh hiểu em nhiều hơn, hiểu
+        hơn về những gì em nghĩ, cảm xúc và mong muốn của em. Anh xin lỗi vì có những lúc anh không hiểu em, làm em
+        buồn, làm em cảm thấy tủi thân, chưa đủ tinh tế để nhận ra những lúc em cần được lắng nghe. Nhưng thật sự thì
+        trong lòng anh em là một người rất quan trọng đối với anh, anh trân trọng từng khoảnh khắc anh bên em — dù là
+        vui vẻ hay cả những lúc giận hờn, đó là những kỉ niệm đáng nhớ nhất của anh.
+
+        Cảm ơn em vì đã kiên nhẫn với anh, vì đã ở lại, đã chọn hiểu và cùng anh học cách yêu thương trưởng thành hơn
+        mỗi ngày. Nhờ có em, anh biết cách lắng nghe nhiều hơn, biết suy nghĩ cho cảm xúc của người khác và biết rằng
+        yêu không chỉ là hạnh phúc, mà còn là trách nhiệm.
+
+        Giáng Sinh này, anh không mong gì hơn ngoài việc được ngắm em mỗi ngày, được thấy em luôn mỉm cười, luôn cảm
+        thấy được yêu thương và an toàn khi ở bên anh. Anh mong rằng dù tương lai có thế nào, chúng ta vẫn đủ bình tĩnh
+        để nắm tay nhau, đủ chân thành để nói ra cảm xúc, và đủ yêu để không buông tay.
+
+        Cảm ơn em vì đã đến bên anh, vì đã là một phần rất đặc biệt trong cuộc sống của anh.
+
+        Anh có một món quà Giáng Sinh dành cho em. Đây là những khoảnh khắc mà anh trân quý nhất nhưng còn thiếu những
+        khoảnh khắc mà mình cùng nhau nên anh mong trong tương lai gần nhất anh sẽ có thể xuất hiện cùng em trong những
+        khoảnh khắc đáng nhớ nhất.
+
+        Mãi iu em! 💖
+
+        Hãy click vào nút bên dưới để khám phá nhé!✨
+      </div>
+    </div>
+    <button class="welcome-button" onclick="enterScene()">Em iu bấm vào đaiiii 💖</button>
+  </div>
+
+  <script>
+    // Create snowflakes
+    function createSnowflakes() {
+      const snowflakeCount = 50;
+      for (let i = 0; i < snowflakeCount; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.innerHTML = '❄';
+        snowflake.style.left = Math.random() * 100 + '%';
+        snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        snowflake.style.animationDelay = Math.random() * 5 + 's';
+        snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+        document.body.appendChild(snowflake);
+      }
+    }
+
+    // Navigate to instruction screen
+    function enterScene() {
+      window.location.href = 'instruction.html';
+    }
+
+    // Initialize
+    createSnowflakes();
+  </script>
+
+</body>
+
+</html>
