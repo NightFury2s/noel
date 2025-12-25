@@ -11,7 +11,7 @@ echo ========================================
 echo.
 
 REM Start Python HTTP server and open browser
-start http://localhost:8000/noel_v2.html
+start http://localhost:8000/app.html
 python -m http.server 8000
 
 REM If Python 3 is not found, try Python 2

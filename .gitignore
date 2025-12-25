@@ -12,3 +12,9 @@ Thumbs.db
 
 # Batch files (optional - remove if you want to include)
 # start_noel.bat
+
+# Claude Code
+CLAUDE.md
+.claude/
+plans/
+.repomixignore
